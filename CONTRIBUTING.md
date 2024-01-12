@@ -71,3 +71,9 @@ Before you submit a pull request, check that it meets these guidelines:
 
 Please note that the `passwordler` project is released with a
 Code of Conduct. By contributing to this project you agree to abide by its terms.
+
+Certainly! To properly attribute the structure and guidelines of your contribution document to Cookiecutter, you can add an attribution section at the end of your file. Here's a suggestion on how you might phrase it:
+
+## Attribution
+
+This contribution guide has been adapted from templates provided by Cookiecutter. Cookiecutter is a command-line utility that creates projects from cookiecutters (project templates). We acknowledge and thank the Cookiecutter community for providing a comprehensive framework that has shaped the contribution process and guidelines of this project. For more information about Cookiecutter and its community-driven templates, please visit [Cookiecutter's GitHub repository](https://github.com/cookiecutter/cookiecutter).
