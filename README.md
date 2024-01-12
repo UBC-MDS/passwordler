@@ -1,6 +1,6 @@
 # passwordler
 
-This package provides password management tools in Python. The package consists of four functions. The first function is responsible for generating passwords, while the second evaluates their strength, categorizing them as weak, medium, or strong. The third function handles password encryption, ensuring data security, and the fourth function allows for decryption when necessary. 
+This package provides password management tools in Python. The package consists of four functions. The first function is responsible for generating passwords, while the second evaluates their strength, categorizing them as weak, good, or strong. The third function handles password encryption, ensuring data security, and the fourth function allows for decryption when necessary. 
 
 Functions included in this package:
 - password_creator
