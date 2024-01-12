@@ -61,6 +61,9 @@ jobs:
 
       - name: Install package
         run: poetry install
+      
+      - name: Install Python Semantic Release
+        run: poetry run pip install python-semantic-release
 
       - name: Use Python Semantic Release to prepare release
         env:
