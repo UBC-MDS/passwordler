@@ -1,4 +1,4 @@
-def password_encryption(raw_password: str, encrypt_algo: list = ['AES']) -> str:
+def encrypt_password(raw_password: str, encrypt_algo: list = ['AES']) -> str:
     """
     Encrypt a given password.
 
