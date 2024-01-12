@@ -37,13 +37,10 @@ jobs:
   cd:
     # Only run this job if the "ci" job passes
     needs: ci
-    permissions:
-      id-token: write  # Add this line to grant permission to write the OIDC token.
 
     # Only run this job if new work is pushed to "main"
-
-    ### tempo comment off
-    # if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    ### NOTE: REMOVE the `false` in later milestones
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && false
 
     # Set up operating system
     runs-on: ubuntu-latest
@@ -79,27 +76,28 @@ jobs:
             poetry run semantic-release publish
       
       ### For milestone 1, no need to publish release 0.01
+      ### For later milestones, we need to setup TEST_PYPI_API_TOKEN and PYPI_API_TOKEN in the repo settings
 
-      # - name: Publish to TestPyPI
-      #   uses: pypa/gh-action-pypi-publish@release/v1
-      #   with:
-      #     user: __token__
-      #     password: ${{ secrets.TEST_PYPI_API_TOKEN }}
-      #     repository-url: https://test.pypi.org/legacy/
-      #     # skip uploading a package if a version with the same name and version number already exists on the specified package index
-      #     skip-existing: true
+      - name: Publish to TestPyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository-url: https://test.pypi.org/legacy/
+          # skip uploading a package if a version with the same name and version number already exists on the specified package index
+          skip-existing: true
 
-      # - name: Test install from TestPyPI
-      #   run: |
-      #       pip install \
-      #       --index-url https://test.pypi.org/simple/ \
-      #       --extra-index-url https://pypi.org/simple \
-      #       passwordler
+      - name: Test install from TestPyPI
+        run: |
+            pip install \
+            --index-url https://test.pypi.org/simple/ \
+            --extra-index-url https://pypi.org/simple \
+            passwordler
 
-      # - name: Publish to PyPI
-      #   uses: pypa/gh-action-pypi-publish@release/v1
-      #   with:
-      #     user: __token__
-      #     password: ${{ secrets.PYPI_API_TOKEN }}
-      #     # skip uploading a package if a version with the same name and version number already exists on the specified package index
-      #     skip-existing: true
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
+          # skip uploading a package if a version with the same name and version number already exists on the specified package index
+          skip-existing: true
