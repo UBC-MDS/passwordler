@@ -22,6 +22,14 @@ For information about how to contribute to this package, please review our [Cont
 ## License
 This packages uses the MIT License, more information can be found [here](https://github.com/UBC-MDS/passwordler/blob/main/LICENSE)
 
+
 ## Credits
 
 `passwordler` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter)
+
+## Contributors
+- Michelle Hunn 
+- Kiersten Gilberg
+- Rory White
+- Yiwei Zhang
+
