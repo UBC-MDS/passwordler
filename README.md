@@ -5,8 +5,8 @@ This package provides password management tools in Python. The package consists 
 ## List of functions
 - password_creator
 - password_strength
-- password_encryption
-- password_decryption
+- encrypt_password
+- decrypt_password
 
 ## Contributors
 - Michelle Hunn 
