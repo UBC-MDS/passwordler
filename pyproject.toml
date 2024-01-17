@@ -2,7 +2,7 @@
 name = "passwordler"
 version = "0.0.1"
 description = "A simple utility package for passwords"
-authors = ["Kiersten Gilberg, Michelle Hunn, YRory Whitete, Yiwei Zhang"]
+authors = ["Kiersten Gilberg, Michelle Hunn, Rory White, Yiwei Zhang"]
 license = "MIT"
 readme = "README.md"
 
