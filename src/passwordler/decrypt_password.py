@@ -27,6 +27,16 @@ def decrypt_password(encrypted_message, random_seed = 123):
     Output: 'Monty Python'
 
     """
+    if not isinstance(encrypted_message, str):
+        raise TypeError(
+            f"string expected as encrypted message, got '{type(encrypted_message)}'"
+            )
+    
+    if not isinstance(random_seed, int):
+        raise TypeError(
+            f"integer expected as random_seed, got '{type(random_seed)}'"
+            )
+    
     random.seed(random_seed)
     
     original = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
