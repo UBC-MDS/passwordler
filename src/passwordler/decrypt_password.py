@@ -2,19 +2,29 @@ import random
 
 def decrypt_password(encrypted_message, random_seed = 123):
     """
-    Decrypt an encrypted password.
-
-    This function decrypts an encrypted string. It supports the Advanced Encryption Standard (AES) 
-    encryption, which is widely used to secure sensitive data. Employing the provided key, the 
-    function decrypts the password, ensuring it matches the encryption algorithm applied during the 
-    encryption process. The function returns the original, human-readable password.
+    Decrypt an encrypted password or message using a simple substitution cipher.
+    
+    The function uses a substitution cipher to decrypt an encrypted string. The 
+    original set is replaced with a randomly shuffled character from the same set.
+    The random seed is utilized to make sure that the encryption and the decryption 
+    matches.   
 
     Parameters:
-    password (bytes): The encrypted password to be decrypted.
-    key (bytes): The encryption key used for decryption.
+    - encrypted_message (str): The encrypted message to be decrypted.
+    - random_seed (int): Seed for the random number generator to ensure that 
+                         encryption and decryption match. Default is 123.
 
     Returns:
-    str: The decrypted password.
+    - str: The decrypted message.
+
+    The function uses a substitution cipher where each character in the original
+    set is replaced with a randomly shuffled character from the same set. The random
+    seed is utilized to maintain consistent decryption results when needed.
+
+    Example:
+    >>> encrypted = encrypt_password('Monty Python', random_seed = 123)
+    >>> decrypted = decrypt_password(encrypted, random_seed = 123)
+    Output: 'Monty Python'
 
     """
     random.seed(random_seed)
@@ -40,5 +50,4 @@ def decrypt_password(encrypted_message, random_seed = 123):
 
     decrypted_msg = ''.join(decrypted_msg)
 
-    print(decrypted_msg)
     return decrypted_msg
