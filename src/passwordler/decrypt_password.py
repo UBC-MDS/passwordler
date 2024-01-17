@@ -37,6 +37,10 @@ def decrypt_password(encrypted_message, random_seed = 123):
             f"integer expected as random_seed, got '{type(random_seed)}'"
             )
     
+    if encrypted_message == '':
+        raise ValueError(
+            'encrypted_message cannot be empty string')
+    
     random.seed(random_seed)
     
     original = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q',
