@@ -18,6 +18,20 @@ def encrypt_password(message, random_seed=123):
     Returns:
     str: The encrypted message.
     """
+    if not isinstance(message, str):
+        raise TypeError(
+            f"string expected as encrypted message, got '{type(message)}'"
+        )
+
+    if not isinstance(random_seed, int):
+        raise TypeError(
+            f"integer expected as random_seed, got '{type(random_seed)}'"
+        )
+
+    if message == '':
+        raise ValueError(
+            'encrypted_message cannot be empty string')
+
     random.seed(random_seed)
 
     encryption = original.copy()
