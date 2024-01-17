@@ -1,4 +1,8 @@
+import re
+
+
 def password_strength(password):
+
     """
     Tests the strength of a password.
 
@@ -12,4 +16,8 @@ def password_strength(password):
     Returns:
     str: a rating of either 'weak', 'good' or 'strong'
     """
-
+    count_special = password.count(["!", "@", "~", "#", "$", "%", '^', '&', '*', '(', ')', '?', '[', ']', '{', '}'])
+    count_lowercase = len(re.findall("[a-z]", password))
+    count_uppercase = password.count("[A-Z]")
+    count_numeric = password.count([0-9])
+    return 2
