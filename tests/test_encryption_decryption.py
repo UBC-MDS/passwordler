@@ -1,3 +1,5 @@
+# author: Yiwei Zhang, Michelle Hunn
+# date: 2024-01-16
 from passwordler.encrypt_password import encrypt_password, decrypt_password, original, getKeyMap
 import pytest
 import random
@@ -43,7 +45,6 @@ def test_encrypt_non_standard_characters():
     assert all(char in encrypted for char in "~`**^")
 
 # Test cases for decrypt_password
-
 
 def test_decrypt_normal():
     """

@@ -1,3 +1,5 @@
+# author: Michelle Hunn, Yiwei Zhang
+# date: 2024-01-16
 import random
 
 original = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
