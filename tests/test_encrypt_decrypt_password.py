@@ -1,4 +1,5 @@
 import pytest
+import random
 from passwordler.decrypt_password import decrypt_password
 from passwordler.encrypt_password import encrypt_password
 
