@@ -3,7 +3,6 @@
 from passwordler.encrypt_password import encrypt_password
 import pytest
 
-
 def test_encrypt_password_type_error():
     """
     Test if the function returns a TypeError if the type of the input is not correct.
