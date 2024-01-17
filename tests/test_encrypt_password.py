@@ -1,10 +1,7 @@
 # author: Yiwei Zhang, Michelle Hunn
 # date: 2024-01-16
-from passwordler.encrypt_password import encrypt_password, decrypt_password
+from passwordler.encrypt_password import encrypt_password
 import pytest
-
-# import decrypt_password as below after merged
-# from src.passwordler.decrypt_password import decrypt_password
 
 
 def test_encrypt_password_type_error():
@@ -33,6 +30,7 @@ def test_encrypt_password_no_seed():
     result = encrypt_password('Camelot')
     assert isinstance(result, str)
 
+
 def test_encrypt_normal():
     """
     Test that a standard message is correctly encrypted.
@@ -42,6 +40,7 @@ def test_encrypt_normal():
     encrypted = encrypt_password(message, 123)
     assert encrypted != message
     assert isinstance(encrypted, str)
+
 
 def test_encrypt_non_standard_characters():
     """
@@ -53,35 +52,3 @@ def test_encrypt_non_standard_characters():
     print(encrypted)
 
     assert all(char in encrypted for char in "~`**^")
-
-# Test cases for decrypt_password
-
-
-def test_decrypt_normal():
-    """
-    Test that an encrypted message is correctly decrypted back to the original message.
-    """
-    message = "testmessage"
-    encrypted = encrypt_password(message, 123)
-    decrypted = decrypt_password(encrypted, 123)
-    assert decrypted == message
-
-
-def test_decrypt_empty_string():
-    """
-    Test that an empty string remains unchanged when decrypted.
-    """
-    encrypted = ""
-    decrypted = decrypt_password(encrypted, 123)
-    assert decrypted == ""
-
-
-def test_decrypt_non_standard_characters():
-    """
-    Test that non-standard characters (not in the original character set) 
-    are unchanged in the decrypted message.
-    """
-    message = "test~`**^"
-    encrypted = encrypt_password(message, 123)
-    decrypted = decrypt_password(encrypted, 123)
-    assert all(char in decrypted for char in message)
