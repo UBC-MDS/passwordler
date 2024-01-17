@@ -1,6 +1,5 @@
 # author: Yiwei Zhang
 # date: 2024-01-16
-from passwordler.encrypt_password import encrypt_password, decrypt_password
 from passwordler._internals import original, getKeyMap
 import pytest
 import random
