@@ -1,4 +1,5 @@
-from passwordler import passwordler
+import pytest
 
-def test_functionality():
-    assert 1 == 1
+if __name__ == "__main__":
+    # Run pytest to execute all tests
+    pytest.main()
