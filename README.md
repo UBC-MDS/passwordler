@@ -16,12 +16,73 @@ There are many password related packages already on the PyPI server. We have sel
 $ pip install passwordler
 ```
 
+## Using `passwordler` in Python
+
+After installing `passwordler` with pip, you can use its functions in Python as follows:
+
+1. **Encrypting a Password**:
+
+   ```python
+   from passwordler import encrypt_password
+
+   # Encrypt a password with a default seed
+   encrypted_password = encrypt_password("YourPasswordHere")
+   print(encrypted_password)  # Prints the encrypted password
+   ```
+
+   If you want to use a specific seed for the encryption, you can pass it as a second argument:
+
+   ```python
+   # Encrypt a password with a specific seed
+   encrypted_password = encrypt_password("YourPasswordHere", 42)
+   print(encrypted_password)  # Prints the encrypted password using the specified seed
+   ```
+
+2. **Decrypting a Password**:
+
+   To decrypt a password that was encrypted with the `encrypt_password` function, use the `decrypt_password` function with the same seed used for encryption:
+
+   ```python
+   from passwordler import decrypt_password
+
+   # Decrypt a password
+   decrypted_password = decrypt_password(encrypted_password, 42)
+   print(decrypted_password)  # Prints the decrypted password, which should match "YourPasswordHere"
+   ```
+
+3. **Evaluating Password Strength**:
+
+   The `password_strength` function evaluates the strength of a password based on length, use of uppercase letters, numbers, and special characters:
+
+   ```python
+   from passwordler import password_strength
+
+   # Evaluate the strength of a password
+   strength = password_strength("YourPasswordHere")
+   print(strength)  # Prints the strength of the password (e.g., 'Your password is: Strong')
+   ```
+
+Remember to replace `"YourPasswordHere"` with the actual password you wish to process in the above examples. The `password_strength` function will rate the password as 'Weak', 'Good', or 'Strong' based on its complexity and common password patterns.
+
+### Running Tests
+
+To ensure `passwordler` is functioning correctly on your system, you can run the test suite with `pytest`. First, ensure you have `pytest` installed:
+
+```bash
+$ pip install pytest
+```
+
+If you have cloned the repository and want to run the tests, navigate to the root directory of the project and execute:
+
+```bash
+$ pytest
+```
+
 ## Contributing 
 For information about how to contribute to this package, please review our [Contributing document](https://github.com/UBC-MDS/passwordler/blob/main/CONTRIBUTING.md). All contributors must abide by our [Code of Conduct](https://github.com/UBC-MDS/passwordler/blob/main/CONDUCT.md)
 
 ## License
 This packages uses the MIT License, more information can be found [here](https://github.com/UBC-MDS/passwordler/blob/main/LICENSE)
-
 
 ## Credits
 `passwordler` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter)
