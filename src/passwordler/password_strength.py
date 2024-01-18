@@ -19,10 +19,14 @@ def password_strength(password):
     count_numbers = len(re.findall('[0-9]', password))
     count_special_chars = len(re.findall('[!-\/:-@[-`{-~]', password)) 
     length = len(password)
+    common_passwords = ['123456', 'password', '12345', '12345678', 'qwerty', '1234567890', '1234', 
+                        'baseball', 'dragon', 'football', '1234567', 'monkey', 'letmein', 'abc123', 
+                        '111111', 'mustang', 'access', 'shadow', 'master', 'michael', 'superman', 
+                        '696969', '123123', 'batman', 'trustno1']
 
-    if length >= 12 and count_uppercase >= 1 and count_numbers >= 1 and count_special_chars >= 1:
+    if length >= 12 and count_uppercase >= 1 and count_numbers >= 1 and count_special_chars >= 1 and password not in common_passwords:
         return 'Your password is: Strong'
-    elif length >= 8 and (count_uppercase + count_numbers + count_special_chars) > 2:
+    elif length >= 8 and (count_uppercase + count_numbers + count_special_chars) > 2 and password not in common_passwords:
         return 'Your password is: Good'
     else:
         return 'Your password is: Weak'
