@@ -24,9 +24,13 @@ def password_strength(password):
                         '111111', 'mustang', 'access', 'shadow', 'master', 'michael', 'superman', 
                         '696969', '123123', 'batman', 'trustno1']
 
-    if length >= 12 and count_uppercase >= 1 and count_numbers >= 1 and count_special_chars >= 1 and password not in common_passwords:
+    if not isinstance(password, str):
+        raise TypeError("'password' should be of type 'string'")
+    if password == '':
+        raise ValueError("'password' cannot be an empty string")
+    elif length >= 12 and count_uppercase >= 1 and count_numbers >= 1 and count_special_chars >= 1 and password not in common_passwords:
         return 'Your password is: Strong'
-    elif length >= 8 and (count_uppercase + count_numbers + count_special_chars) > 2 and password not in common_passwords:
+    elif length >= 8 and (count_uppercase + count_numbers + count_special_chars) >= 2 and password not in common_passwords:
         return 'Your password is: Good'
     else:
         return 'Your password is: Weak'
