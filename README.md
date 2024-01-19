@@ -67,7 +67,7 @@ After installing `passwordler` with pip, you can use its functions in Python as 
    print(strength)  # Prints the strength of the password (e.g., 'Your password is: Strong')
    ```
 
-Remember to replace `"YourPasswordHere"` with the actual password you wish to process in the above examples. The `password_strength` function will rate the password as 'Weak', 'Good', or 'Strong' based on its complexity and common password patterns.
+   Remember to replace `"YourPasswordHere"` with the actual password you wish to process in the above examples. The `password_strength` function will rate the password as 'Weak', 'Good', or 'Strong' based on its complexity and common password patterns.
 
 4. **Generating a Password**:
 
