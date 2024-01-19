@@ -100,6 +100,11 @@ If you have cloned the repository and want to run the tests, navigate to the roo
 $ pytest
 ```
 
+To show test coverage report
+```bash
+$ pytest --cov=passwordler --cov-report term
+```
+
 ## Contributing 
 For information about how to contribute to this package, please review our [Contributing document](https://github.com/UBC-MDS/passwordler/blob/main/CONTRIBUTING.md). All contributors must abide by our [Code of Conduct](https://github.com/UBC-MDS/passwordler/blob/main/CONDUCT.md)
 
