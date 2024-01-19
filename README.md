@@ -69,6 +69,23 @@ After installing `passwordler` with pip, you can use its functions in Python as 
 
 Remember to replace `"YourPasswordHere"` with the actual password you wish to process in the above examples. The `password_strength` function will rate the password as 'Weak', 'Good', or 'Strong' based on its complexity and common password patterns.
 
+4. **Generating a Password**:
+
+   `generate_password` allows you to create a secure password of customizable length and complexity, with options to include or exclude special characters and numbers.
+   
+   ```python
+   from passwordler.generate_password import generate_password
+   # Encrypt a password with a default seed
+   password = generate_password()
+   print(password)  # Prints the generated password
+   ```
+   
+   The function has three default parameters: `length`=12, `include_special_characters`=True, `include_numbers`=True. You can change these parameters to generate a password of your liking.
+   
+   ```python
+        generate_password(45, False, False)  # Generates a password of length 45 without special characters and numbers
+   ```
+
 ### Running Tests
 
 To ensure `passwordler` is functioning correctly on your system, you can run the test suite with `pytest`. First, ensure you have `pytest` installed:
