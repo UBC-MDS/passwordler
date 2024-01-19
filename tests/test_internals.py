@@ -4,22 +4,21 @@ from passwordler._internals import original, getKeyMap
 import pytest
 import random
 
-# import decrypt_password as below after merged
-# from src.passwordler.decrypt_password import decrypt_password
 
 # Test cases for getKeyMap
-
 
 def test_get_key_map_for_encryption():
     """
     Test that getKeyMap generates a correct mapping for encryption.
-    Each character in the original list should map to a different character in the shuffled list.
+    Not all characters in the original list map to the original characters in the shuffled list,
+    as there might be coincidence, some of the original mapping didn't change after shuffle.
     """
     shuffled = original.copy()
     random.shuffle(shuffled)
     key_map = getKeyMap(shuffled, isDecryption=False)
     assert len(key_map) == len(original)
-    assert all(key_map[orig] != orig for orig in original)
+    assert not all(key_map[orig] == orig for orig in original)
+
 
 
 def test_get_key_map_for_decryption():
