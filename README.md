@@ -28,7 +28,7 @@ After installing `passwordler` with pip, you can use its functions in Python as 
 1. **Encrypting a Password**:
 
    ```python
-   from passwordler import encrypt_password
+   from passwordler.encrypt_password import encrypt_password
 
    # Encrypt a password with a default seed
    encrypted_password = encrypt_password("YourPasswordHere")
@@ -48,7 +48,7 @@ After installing `passwordler` with pip, you can use its functions in Python as 
    To decrypt a password that was encrypted with the `encrypt_password` function, use the `decrypt_password` function with the same seed used for encryption:
 
    ```python
-   from passwordler import decrypt_password
+   from passwordler.decrypt_password import decrypt_password
 
    # Decrypt a password
    decrypted_password = decrypt_password(encrypted_password, 42)
@@ -60,7 +60,7 @@ After installing `passwordler` with pip, you can use its functions in Python as 
    The `password_strength` function evaluates the strength of a password based on length, use of uppercase letters, numbers, and special characters:
 
    ```python
-   from passwordler import password_strength
+   from passwordler.password_strength import password_strength
 
    # Evaluate the strength of a password
    strength = password_strength("YourPasswordHere")
