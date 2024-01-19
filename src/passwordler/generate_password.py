@@ -1,3 +1,6 @@
+import random
+import string
+
 def generate_password(length=12, include_symbols=True, include_numbers=True):
     """
     Generate a password.
@@ -13,3 +16,38 @@ def generate_password(length=12, include_symbols=True, include_numbers=True):
     Returns:
     str: A randomly generated password.
     """
+
+    if not isinstance(length, int):
+        raise TypeError("Length must be an integer.")
+    
+    if length < 12 or length > 100:
+        raise ValueError("Password length must be between 12 and 100 characters.")
+
+    if not isinstance(include_symbols, bool):
+        raise TypeError("include_symbols must be a boolean value.")
+    
+    if not isinstance(include_numbers, bool):
+        raise TypeError("include_numbers must be a boolean value.")
+   
+    # Ensure that the password contains at least one of each type of character specified
+    password_characters = [random.choice(string.ascii_uppercase), random.choice(string.ascii_lowercase)]
+    if include_numbers:
+        password_characters.append(random.choice(string.digits))
+    if include_symbols:
+        password_characters.append(random.choice(string.punctuation))
+
+    # Generate master list of characters to choose from
+    possible_chars = string.ascii_letters
+    if include_numbers:
+        possible_chars += string.digits
+    if include_symbols:
+        possible_chars += string.punctuation
+
+    # Fill the rest of the password length with random characters from the possible set
+    password_characters.extend(random.choice(possible_chars) for _ in range(length - len(password_characters)))
+
+    random.shuffle(password_characters)
+
+    final_password = ''.join(password_characters)
+    print(f'Your password is: {final_password}')
+    return final_password
