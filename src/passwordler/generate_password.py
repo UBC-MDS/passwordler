@@ -49,5 +49,4 @@ def generate_password(length=12, include_symbols=True, include_numbers=True):
     random.shuffle(password_characters)
 
     final_password = ''.join(password_characters)
-    print(f'Your password is: {final_password}')
     return final_password
