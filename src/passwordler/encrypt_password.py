@@ -7,16 +7,25 @@ def encrypt_password(message, random_seed=123):
     """
     Encrypt a message using a simple substitution cipher.
 
-    This function encrypts a given message by mapping each character to a corresponding character 
-    in a shuffled character set. The function uses a predefined list of characters and a random 
-    seed to ensure consistent shuffling. Characters not in the predefined list remain unchanged.
+    This function encrypts a message by substituting each character with a corresponding character 
+    from a shuffled set, using the same set of characters as the decryption function. The shuffle 
+    is controlled by a random seed to ensure reproducible results, allowing encrypted messages 
+    to be consistently decrypted using the matching seed. Characters not included in the 
+    substitution set remain unchanged in the encrypted message.
 
     Parameters:
-    message (str): The message to be encrypted.
-    random_seed (int): The seed used for random shuffling (default is 123).
+    - message (str): The message to be encrypted.
+    - random_seed (int): Seed for the random number generator to ensure consistent encryption 
+                         results. Default value is 123.
 
     Returns:
-    str: The encrypted message.
+    - str: The encrypted message.
+
+    Example:
+    >>> original_message = 'Monty Python'
+    >>> encrypted_message = encrypt_password(original_message, random_seed = 123)
+    >>> decrypted_message = decrypt_password(encrypted_message, random_seed = 123)
+    Output: 'Monty Python'
     """
     if not isinstance(message, str):
         raise TypeError(
