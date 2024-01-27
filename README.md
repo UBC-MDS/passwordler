@@ -1,5 +1,7 @@
 # passwordler
 
+[![Documentation Status](https://readthedocs.org/projects/passwordler/badge/?version=latest)](https://passwordler.readthedocs.io/en/latest/?badge=latest)
+
 This package provides password management tools in Python. The package consists of four functions:
 - **generate_password**: This function creates a random password containing a mix of upper and lower case letters, numbers, and symbols. The inclusion of numbers and symbols can be controlled through parameters.
 - **password_strength**: This function tests the strength of a string to be used as a password. It determines password strength by assessing the length and the amount of capital letters, numbers and special characters used.
