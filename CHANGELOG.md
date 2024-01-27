@@ -20,10 +20,10 @@
 * Add generate password function body by @rorywhite200 in https://github.com/UBC-MDS/passwordler/pull/49
 * Update pyproject.toml by @zywkloo in https://github.com/UBC-MDS/passwordler/pull/54
 
-
 **Full Changelog**: https://github.com/UBC-MDS/passwordler/compare/0.0.1...1.0.0
 
-## v1.0.0 (26/01/2024)
+
+## v2.0.0 (26/01/2024)
 ## What's Changed
 * Example file + Narrative by @Kierst01 in https://github.com/UBC-MDS/passwordler/pull/61
 * Add documentation for generate_password & update function  by @rorywhite200 in https://github.com/UBC-MDS/passwordler/pull/62
