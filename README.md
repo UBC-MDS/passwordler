@@ -14,7 +14,7 @@ This Python package is useful for users seeking an integrated solution for passw
 There are many password related packages already on the PyPI server. We have selected a few key examples that complete the same functions as our package. An example of a package that is similar to our password_creator function can be found [here](https://pypi.org/project/easy-password-generator/). Similarly, there are also other packages that check for the strength of passwords, one of which can be seen [here](https://pypi.org/project/password-strength/), this is similar to our password_strength function. There is also a [password encryption package](https://pypi.org/project/password/) which does the same thing as our password_encryption functions. However, there were no password decryption specific function on PyPI. The advantage of our package lies in its comprehensive suite of password-related functions, complemented by an original and intuitive algorithm that demonstrates the fundamental principles of password encryption and decryption.
 
 ## Installation
-For release 1.0.0, install the `passwordler` locally:
+To use the release 2.0.0, clone the repository to your local machine. In the root directory run the following commands to install `passwordler` locally:
 ```
 $ conda create --name passwordler python=3.11 -y
 $ conda activate passwordler
