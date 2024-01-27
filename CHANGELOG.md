@@ -6,7 +6,7 @@
 
 - First release of `passwordler`!
 
-## v1.0.0 (26/01/2024)
+## v1.0.0 (19/01/2024)
 * Update readme according to encrytion/decryption algo changes by @zywkloo in https://github.com/UBC-MDS/passwordler/pull/41
 * Week2 decfun body by @mishelly-h in https://github.com/UBC-MDS/passwordler/pull/42
 * Update pyproject.toml and fix typo by @zywkloo in https://github.com/UBC-MDS/passwordler/pull/36
@@ -22,3 +22,19 @@
 
 
 **Full Changelog**: https://github.com/UBC-MDS/passwordler/compare/0.0.1...1.0.0
+
+## v1.0.0 (26/01/2024)
+## What's Changed
+* Example file + Narrative by @Kierst01 in https://github.com/UBC-MDS/passwordler/pull/61
+* Add documentation for generate_password & update function  by @rorywhite200 in https://github.com/UBC-MDS/passwordler/pull/62
+* Add Narratives and fix encryption doc string by @zywkloo in https://github.com/UBC-MDS/passwordler/pull/63
+* Updated decfun documentation by @mishelly-h in https://github.com/UBC-MDS/passwordler/pull/64
+* Updated yaml by @rorywhite200 in https://github.com/UBC-MDS/passwordler/pull/65
+* Updated python in toml and spelling in conf.py by @rorywhite200 in https://github.com/UBC-MDS/passwordler/pull/66
+* Boosted python version in readthedocs instead by @rorywhite200 in https://github.com/UBC-MDS/passwordler/pull/67
+* Update README.md by @rorywhite200 in https://github.com/UBC-MDS/passwordler/pull/68
+* Yiwei/add group dependency by @zywkloo in https://github.com/UBC-MDS/passwordler/pull/70
+* Review example by @Kierst01 in https://github.com/UBC-MDS/passwordler/pull/69
+
+
+**Full Changelog**: https://github.com/UBC-MDS/passwordler/compare/1.0.0...2.0.0
