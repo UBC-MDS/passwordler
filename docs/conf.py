@@ -7,8 +7,8 @@
 # -- Project information -----------------------------------------------------
 
 project = u"passwordler"
-copyright = u"2024, Kiersten Gilberg, Michelle Hunn, YRory Whitete, Yiwei Zhang"
-author = u"Kiersten Gilberg, Michelle Hunn, YRory Whitete, Yiwei Zhang"
+copyright = u"2024, Kiersten Gilberg, Michelle Hunn, Rory White, Yiwei Zhang"
+author = u"Kiersten Gilberg, Michelle Hunn, Rory White, Yiwei Zhang"
 
 # -- General configuration ---------------------------------------------------
 
