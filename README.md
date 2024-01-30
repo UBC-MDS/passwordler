@@ -3,10 +3,10 @@
 [![Documentation Status](https://readthedocs.org/projects/passwordler/badge/?version=latest)](https://passwordler.readthedocs.io/en/latest/?badge=latest)
 
 This package provides password management tools in Python. The package consists of four functions:
-- **generate_password**: This function creates a random password containing a mix of upper and lower case letters, numbers, and symbols. The inclusion of numbers and symbols can be controlled through parameters.
-- **password_strength**: This function tests the strength of a string to be used as a password. It determines password strength by assessing the length and the amount of capital letters, numbers and special characters used.
-- **encrypt_password**: Encrypts a password using a simple substitution cipher. This function applies a character mapping based on a shuffled character set, providing basic encryption.
-- **decrypt_password**: Decrypts a message that was encrypted using the `encrypt_password` function. It reverses the encryption process by mapping each character of the encrypted message back to its original character.
+- `generate_password`: This function creates a random password containing a mix of upper and lower case letters, numbers, and symbols. The inclusion of numbers and symbols can be controlled through parameters.
+- `password_strength`: This function tests the strength of a string to be used as a password. It determines password strength by assessing the length and the amount of capital letters, numbers and special characters used.
+- `encrypt_password`: Encrypts a password using a simple substitution cipher. This function applies a character mapping based on a shuffled character set, providing basic encryption.
+- `decrypt_password`: Decrypts a message that was encrypted using the `encrypt_password` function. It reverses the encryption process by mapping each character of the encrypted message back to its original character.
 
 This Python package is useful for users seeking an integrated solution for password management, offering a user-friendly experience. With key functionalities consolidated in one package, users can effortlessly generate strong passwords, evaluate their strength, and grasp encryption and decryption methods through our straightforward substitution cipher.
 
