@@ -22,6 +22,9 @@ $ pip install poetry
 $ poetry install
 $ pip install passwordler
 ```
+## Documentation
+
+Our online documentation can be found [here](https://passwordler.readthedocs.io/en/latest/?badge=latest).
 
 ## Using `passwordler` in Python
 
