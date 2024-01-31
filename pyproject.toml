@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "passwordler"
-version = "0.0.3"
+version = "2.0.3"
 description = "A simple utility package for passwords"
 authors = ["Kiersten Gilberg, Michelle Hunn, Rory White, Yiwei Zhang"]
 license = "MIT"
@@ -26,7 +26,7 @@ sphinx-rtd-theme = "^2.0.0"
 version_toml = [
     "pyproject.toml:tool.poetry.version",
 ] 
-version_variable = "pyproject.toml:version"
+version_variable = "pyproject.toml:tool.poetry.version"
 branch = "main"                             
 changelog_file = "CHANGELOG.md"             
 build_command = "pip install poetry && poetry build"             
