@@ -2,13 +2,38 @@
 
 
 
-## v2.0.1 (2024-01-31)
+## v0.0.2 (2024-01-31)
+
+### Fix
+
+* fix: updated installation instructions ([`b76e6c3`](https://github.com/UBC-MDS/passwordler/commit/b76e6c37e6aa4f021fa84be5cea2ff0d13a701b0))
+
+* fix: added badges to REAME file ([`4cb6173`](https://github.com/UBC-MDS/passwordler/commit/4cb61739836b08de53e3c635cbdf46ead86ff7fb))
+
+### Unknown
+
+* Merge pull request #84 from UBC-MDS/update_readme_week4
+
+Updated README file ([`9b3d058`](https://github.com/UBC-MDS/passwordler/commit/9b3d05854db27b52b230b4ba0ef8f566c4d2720c))
+
+* Update CHANGELOG.md ([`4657bf5`](https://github.com/UBC-MDS/passwordler/commit/4657bf5892d3c6428017b64a2e8490ceb83d492c))
+
+* Update pyproject.toml
+
+version number ([`6123249`](https://github.com/UBC-MDS/passwordler/commit/61232490fb7f97ba1354e26b92a8609409d45449))
+
+
+## v0.0.1 (2024-01-31)
 
 ### Fix
 
 * fix: update variables in yaml ([`05fea95`](https://github.com/UBC-MDS/passwordler/commit/05fea95b385d26527acf27603af722db8ab93c07))
 
+* fix: Added documentation link to README ([`b53f747`](https://github.com/UBC-MDS/passwordler/commit/b53f747f92b6f86d655cb3dcc3ba032275875fa0))
+
 * fix: change python version on cookie-cutter ([`ae5bea8`](https://github.com/UBC-MDS/passwordler/commit/ae5bea8f840d6b19b4110dfe90741573abd7dfc3))
+
+* fix: added backticks to functions ([`20f25d2`](https://github.com/UBC-MDS/passwordler/commit/20f25d2f6f4d3ed1af555e71a8da76db596bad5d))
 
 * fix: update ci-cd.yml ([`591d215`](https://github.com/UBC-MDS/passwordler/commit/591d2152d9208639fe8b653efbab0ee4a254fe05))
 
