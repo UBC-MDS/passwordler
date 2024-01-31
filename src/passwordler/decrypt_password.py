@@ -23,8 +23,9 @@ def decrypt_password(encrypted_message, random_seed = 123):
     seed is utilized to maintain consistent decryption results when needed.
 
     Example:
-    >>> encrypted = encrypt_password('Monty Python', random_seed = 123)
-    >>> decrypted = decrypt_password(encrypted, random_seed = 123)
+    >>> original_message = 'Monty Python'
+    >>> encrypted_message = encrypt_password(original_message, random_seed = 123)
+    >>> decrypted_message = decrypt_password(encrypted_message, random_seed = 123)
     Output: 'Monty Python'
 
     """
