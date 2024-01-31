@@ -14,6 +14,10 @@
 
 ### Unknown
 
+* Merge pull request #82 from UBC-MDS/remove_redundant_files
+
+fix: remove empty file in src ([`1341754`](https://github.com/UBC-MDS/passwordler/commit/13417544a895e57a8585540b55b079c487b58561))
+
 * Merge pull request #83 from UBC-MDS/ci-cd-1
 
 fix: update toml file ([`02b8751`](https://github.com/UBC-MDS/passwordler/commit/02b87518d676eff124bcd8232db8026c37224863))
@@ -23,6 +27,8 @@ fix: update toml file ([`02b8751`](https://github.com/UBC-MDS/passwordler/commit
 * Merge pull request #81 from UBC-MDS/ci-cd
 
 fix: update ci-cd.yml ([`0ed2fb4`](https://github.com/UBC-MDS/passwordler/commit/0ed2fb4ab78fa5b2d3e86aa1e869c62371680de1))
+
+* remove empty file in src ([`db5611f`](https://github.com/UBC-MDS/passwordler/commit/db5611f174fcb6e6a4394bd65ff8e628422a4b30))
 
 * Merge pull request #71 from UBC-MDS/UpdateChangelog
 
