@@ -2,6 +2,31 @@
 
 
 
+## v2.1.1 (2024-01-31)
+
+### Fix
+
+* fix: Feedback addressed by using string library and also expanding the existing accented_chars ([`39a25c5`](https://github.com/UBC-MDS/passwordler/commit/39a25c5506569f892d78a18f742ab00808cd1575))
+
+* fix:  Add rationale for function implementation choices in Readme. feedback #2 ([`2121038`](https://github.com/UBC-MDS/passwordler/commit/21210388dc7467b5aaef52514e7275203c4fe61c))
+
+### Unknown
+
+* Merge pull request #89 from UBC-MDS/yiwei/addFunctionMotivations
+
+fix:  Add rationale for function implementation choices in Readme. ([`7e7d84c`](https://github.com/UBC-MDS/passwordler/commit/7e7d84c532e4cc2a56e5410c1751a94516463950))
+
+* Merge pull request #91 from UBC-MDS/yiwei/updateHardcodedStringList
+
+Yiwei/update hardcoded string list ([`faf1af8`](https://github.com/UBC-MDS/passwordler/commit/faf1af823537b50f0d4d3571285f1af6b5b43a9a))
+
+* Rerun example.ipynb as our vocabulary changed ([`0657c89`](https://github.com/UBC-MDS/passwordler/commit/0657c89e8adb0ad90b7046e30e3a6de9894f7fd0))
+
+* Update test_encrypt_non_standard_characters with new values ([`82df255`](https://github.com/UBC-MDS/passwordler/commit/82df255ecf41eb07f42891a713b94f3f5f7adce9))
+
+* Add breaks to make format consistent ([`682c73f`](https://github.com/UBC-MDS/passwordler/commit/682c73fe6b723ba7dd885392d3bafd1f2535a7eb))
+
+
 ## v2.1.0 (2024-01-31)
 
 ### Feature
