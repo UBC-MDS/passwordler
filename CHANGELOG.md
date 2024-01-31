@@ -2,7 +2,25 @@
 
 
 
+## v2.0.4 (2024-01-31)
+
+### Unknown
+
+* Merge pull request #86 from UBC-MDS/add_function_examples
+
+fix: Add function examples ([`1cb1457`](https://github.com/UBC-MDS/passwordler/commit/1cb14574dad5b1a36673944d1a8c7c1b644daf6c))
+
+
 ## v2.0.3 (2024-01-31)
+
+### Unknown
+
+* Update CHANGELOG.md ([`435908b`](https://github.com/UBC-MDS/passwordler/commit/435908b2aa37eb5b019c1066d668d30773a4b015))
+
+* Update pyproject.toml ([`bce9a3e`](https://github.com/UBC-MDS/passwordler/commit/bce9a3ef456cdd70aeea8f7fec70c867a67519c6))
+
+
+## v0.0.3 (2024-01-31)
 
 ### Fix
 
@@ -19,7 +37,7 @@ fix: example version-bump ([`7711579`](https://github.com/UBC-MDS/passwordler/co
 * Update pyproject.toml ([`2b04c01`](https://github.com/UBC-MDS/passwordler/commit/2b04c019deb55ed94ab6defcf503f8fbc8f4b742))
 
 
-## v2.0.2 (2024-01-31)
+## v0.0.2 (2024-01-31)
 
 ### Fix
 
@@ -40,9 +58,13 @@ Updated README file ([`9b3d058`](https://github.com/UBC-MDS/passwordler/commit/9
 version number ([`6123249`](https://github.com/UBC-MDS/passwordler/commit/61232490fb7f97ba1354e26b92a8609409d45449))
 
 
-## v2.0.1 (2024-01-31)
+## v0.0.1 (2024-01-31)
 
 ### Fix
+
+* fix: added and updated examples in functions ([`da9cd77`](https://github.com/UBC-MDS/passwordler/commit/da9cd77955d29251473df4098dcfca8e48f4db6b))
+
+* fix: update example decrypt_password ([`fc1d469`](https://github.com/UBC-MDS/passwordler/commit/fc1d4695537baad0606c818747bc4f858742f789))
 
 * fix: update variables in yaml ([`05fea95`](https://github.com/UBC-MDS/passwordler/commit/05fea95b385d26527acf27603af722db8ab93c07))
 
@@ -60,9 +82,13 @@ version number ([`6123249`](https://github.com/UBC-MDS/passwordler/commit/612324
 
 fix: remove empty file in src ([`1341754`](https://github.com/UBC-MDS/passwordler/commit/13417544a895e57a8585540b55b079c487b58561))
 
+* add example to generate_password ([`f41a242`](https://github.com/UBC-MDS/passwordler/commit/f41a242e39166658279c7ec60e8c69ce649ef6bc))
+
 * Merge pull request #83 from UBC-MDS/ci-cd-1
 
 fix: update toml file ([`02b8751`](https://github.com/UBC-MDS/passwordler/commit/02b87518d676eff124bcd8232db8026c37224863))
+
+* Merge branch &#39;main&#39; of https://github.com/UBC-MDS/passwordler into add_function_examples ([`f743980`](https://github.com/UBC-MDS/passwordler/commit/f743980ffebd8ed025de9fc11e016bdbcfabc1ee))
 
 * Update pyproject.toml ([`a7b0707`](https://github.com/UBC-MDS/passwordler/commit/a7b0707da1ae115e252f2572bb819053140e2cbe))
 
