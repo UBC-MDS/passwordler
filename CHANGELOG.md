@@ -2,7 +2,24 @@
 
 
 
-## v2.0.2 (2024-01-31)
+## v0.0.3 (2024-01-31)
+
+### Fix
+
+* fix: example version-bump ([`d0701f4`](https://github.com/UBC-MDS/passwordler/commit/d0701f4b850e2f10d1d752601e304fc0a4345600))
+
+### Unknown
+
+* Merge pull request #85 from UBC-MDS/version-bump
+
+fix: example version-bump ([`7711579`](https://github.com/UBC-MDS/passwordler/commit/771157944cdb529cb1ce48f26060470328db7815))
+
+* Update CHANGELOG.md ([`4367ada`](https://github.com/UBC-MDS/passwordler/commit/4367ada2b3c5882e28993fd154ed583cdacb34f8))
+
+* Update pyproject.toml ([`2b04c01`](https://github.com/UBC-MDS/passwordler/commit/2b04c019deb55ed94ab6defcf503f8fbc8f4b742))
+
+
+## v0.0.2 (2024-01-31)
 
 ### Fix
 

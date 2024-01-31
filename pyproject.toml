@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "passwordler"
-version = "2.0.2"
+version = "0.0.3"
 description = "A simple utility package for passwords"
 authors = ["Kiersten Gilberg, Michelle Hunn, Rory White, Yiwei Zhang"]
 license = "MIT"
