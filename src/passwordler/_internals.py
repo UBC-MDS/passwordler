@@ -4,9 +4,10 @@ import string
 
 accented_chars = ['á', 'à', 'â', 'ä', 'ã', 'å', 'æ', 'ç', 'é', 'è', 'ê', 'ë', 'í',
                   'ì', 'î', 'ï', 'ñ', 'ó', 'ò', 'ô', 'ö', 'õ', 'ø', 'œ', 'ú', 'ù', 'û', 'ü', 'ý', 'ÿ']
-original = accented_chars + string.ascii_letters + \
-    string.digits + string.punctuation
+string_builtin_chars = string.ascii_letters + string.digits + string.punctuation
 
+# Combine the lists
+original = accented_chars + list(string_builtin_chars)
 
 def getKeyMap(shuffled, isDecryption=False):
     """
