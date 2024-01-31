@@ -89,7 +89,7 @@ After installing `passwordler` with pip, you can use its functions in Python as 
    ```
 
 ### Running Tests
-
+ 
 To ensure `passwordler` is functioning correctly on your system, you can run the test suite with `pytest`. First, ensure you have `pytest` installed:
 
 ```bash
