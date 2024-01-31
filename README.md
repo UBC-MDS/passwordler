@@ -1,5 +1,8 @@
 # passwordler
 
+<img src="https://github.com/UBC-MDS/passwordler/assets/125914446/1648cb38-c2b7-4cd8-9dc3-c57077d4d520" width="150">
+
+
 [![Documentation Status](https://readthedocs.org/projects/passwordler/badge/?version=latest)](https://passwordler.readthedocs.io/en/latest/?badge=latest) [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-360/) ![ci-cd](https://github.com/UBC-MDS/passwordler/actions/workflows/ci-cd.yml/badge.svg) [![codecov](https://codecov.io/gh/UBC-MDS/passwordler/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/passwordler)
 
 
