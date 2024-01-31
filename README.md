@@ -7,15 +7,38 @@
 
 
 This package provides password management tools in Python. The package consists of four functions:
-- `generate_password`: This function creates a random password containing a mix of upper and lower case letters, numbers, and symbols. The inclusion of numbers and symbols can be controlled through parameters.
-- `password_strength`: This function tests the strength of a string to be used as a password. It determines password strength by assessing the length and the amount of capital letters, numbers and special characters used.
-- `encrypt_password`: Encrypts a password using a simple substitution cipher. This function applies a character mapping based on a shuffled character set, providing basic encryption.
-- `decrypt_password`: Decrypts a message that was encrypted using the `encrypt_password` function. It reverses the encryption process by mapping each character of the encrypted message back to its original character.
+- `generate_password`:
+   - This function creates a random password containing a mix of upper and lower-case letters, numbers, and symbols. The inclusion of numbers and symbols can be controlled through parameters.
+- `password_strength`:
+   - This function tests the strength of a string to be used as a password. It determines password strength by assessing the length and the amount of capital letters, numbers and special characters used.
+- `encrypt_password`:
+   - Encrypts a password using a simple substitution cipher. This function applies a character mapping based on a shuffled character set, providing basic encryption.
+- `decrypt_password`:
+   - Decrypts a message that was encrypted using the `encrypt_password` function. It reverses the encryption process by mapping each character of the encrypted message back to its original character.
 
 This Python package is useful for users seeking an integrated solution for password management, offering a user-friendly experience. With key functionalities consolidated in one package, users can effortlessly generate strong passwords, evaluate their strength, and grasp encryption and decryption methods through our straightforward substitution cipher.
 
 ## passwordler in the Python Ecosystem
+
 There are many password related packages already on the PyPI server. We have selected a few key examples that complete the same functions as our package. An example of a package that is similar to our password_creator function can be found [here](https://pypi.org/project/easy-password-generator/). Similarly, there are also other packages that check for the strength of passwords, one of which can be seen [here](https://pypi.org/project/password-strength/), this is similar to our password_strength function. There is also a [password encryption package](https://pypi.org/project/password/) which does the same thing as our password_encryption functions. However, there were no password decryption specific function on PyPI. The advantage of our package lies in its comprehensive suite of password-related functions, complemented by an original and intuitive algorithm that demonstrates the fundamental principles of password encryption and decryption.
+
+## Unique Features of passwordler
+
+`passwordler` stands out in the realm of password management packages due to its unique blend of user-friendliness and security, tailored for individuals with varying levels of technical expertise. Here's what sets `passwordler` apart:
+
+- **Ease of Understanding**:
+   - Every aspect of the encryption and decryption process is designed to be easily understood, even by users with only high-school-level tech knowledge.
+  
+- **Simplicity Over Complexity**:
+   - The package avoids the complexity and opacity of nested package dependencies. It is not simply importing and adjusting the parameters of industry-standard AES encryption or SHA-256 hashing, but trying to make the workflow as transparent as possible.
+
+- **Enhanced Security for Beginners**:
+   - Unlike naive encryption techniques like the Caesar Cipher and Vigenere Cipher, which are educational but also easy to crack with a finite number of guesses, `passwordler` provides a level of security that surpasses beginner-level algorithms.
+
+- **Original Algorithm**:
+   - The encryption algorithm was developed from the ground up, maintaining originality and individual intellectual property.
+
+`passwordler` is perfect for users who want to understand and control their password security without delving into complex cryptographic standards. It offers more security than basic algorithms, all while ensuring the codebase remains accessible and maintainable.
 
 ## Installation
 To install `passwordler` type the following command into your terminal:
