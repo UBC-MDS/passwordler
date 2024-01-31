@@ -26,25 +26,27 @@ There are many password related packages already on the PyPI server. We have sel
 
 `passwordler` stands out in the realm of password management packages due to its unique blend of user-friendliness and security, tailored for individuals with varying levels of technical expertise. Here's what sets `passwordler` apart:
 
-- **Ease of Understanding**:
+1. **Ease of Understanding**:
    - Every aspect of the encryption and decryption process is designed to be easily understood, even by users with only high-school-level tech knowledge.
   
-- **Simplicity Over Complexity**:
+2. **Simplicity Over Complexity**:
    - The package avoids the complexity and opacity of nested package dependencies. It is not simply importing and adjusting the parameters of industry-standard AES encryption or SHA-256 hashing, but trying to make the workflow as transparent as possible.
 
-- **Enhanced Security for Beginners**:
+3. **Enhanced Security for Beginners**:
    - Unlike naive encryption techniques like the Caesar Cipher and Vigenere Cipher, which are educational but also easy to crack with a finite number of guesses, `passwordler` provides a level of security that surpasses beginner-level algorithms.
 
-- **Original Algorithm**:
+4. **Original Algorithm**:
    - The encryption algorithm was developed from the ground up, maintaining originality and individual intellectual property.
 
 `passwordler` is perfect for users who want to understand and control their password security without delving into complex cryptographic standards. It offers more security than basic algorithms, all while ensuring the codebase remains accessible and maintainable.
 
 ## Installation
+
 To install `passwordler` type the following command into your terminal:
 ```
 $ pip install passwordler
 ```
+
 ## Documentation
 
 Our online documentation can be found [here](https://passwordler.readthedocs.io/en/latest/?badge=latest).
