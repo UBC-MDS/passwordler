@@ -46,8 +46,8 @@ def test_encrypt_non_standard_characters():
     Test that non-standard characters (not in the original character set) 
     are unchanged in the encrypted message.
     """
-    message = "test~`**^"
+    message = "test \t\n\r\x0b\x0c"
     encrypted = encrypt_password(message, 123)
     print(encrypted)
 
-    assert all(char in encrypted for char in "~`**^")
+    assert all(char in encrypted for char in " \t\n\r\x0b\x0c")

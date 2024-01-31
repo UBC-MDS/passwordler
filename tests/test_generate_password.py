@@ -47,7 +47,8 @@ def test_generate_password_include_numbers():
     """
     Test if the generated password includes numbers.
     """
-    assert any(char in generate_password(12, include_numbers=True) for char in "0123456789")
+    ret = generate_password(12, include_numbers=True)
+    assert any(char in ret for char in "0123456789")
     
 def test_generate_password_strength():
     """
