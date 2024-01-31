@@ -1,6 +1,7 @@
 # passwordler
 
-[![Documentation Status](https://readthedocs.org/projects/passwordler/badge/?version=latest)](https://passwordler.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/passwordler/badge/?version=latest)](https://passwordler.readthedocs.io/en/latest/?badge=latest) [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-360/) ![ci-cd](https://github.com/UBC-MDS/passwordler/actions/workflows/ci-cd.yml/badge.svg) [![codecov](https://codecov.io/gh/UBC-MDS/passwordler/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/passwordler)
+
 
 This package provides password management tools in Python. The package consists of four functions:
 - `generate_password`: This function creates a random password containing a mix of upper and lower case letters, numbers, and symbols. The inclusion of numbers and symbols can be controlled through parameters.
