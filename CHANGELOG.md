@@ -2,7 +2,7 @@
 
 
 
-## v0.0.3 (2024-01-31)
+## v2.0.3 (2024-01-31)
 
 ### Fix
 
@@ -19,7 +19,7 @@ fix: example version-bump ([`7711579`](https://github.com/UBC-MDS/passwordler/co
 * Update pyproject.toml ([`2b04c01`](https://github.com/UBC-MDS/passwordler/commit/2b04c019deb55ed94ab6defcf503f8fbc8f4b742))
 
 
-## v0.0.2 (2024-01-31)
+## v2.0.2 (2024-01-31)
 
 ### Fix
 
@@ -40,7 +40,7 @@ Updated README file ([`9b3d058`](https://github.com/UBC-MDS/passwordler/commit/9
 version number ([`6123249`](https://github.com/UBC-MDS/passwordler/commit/61232490fb7f97ba1354e26b92a8609409d45449))
 
 
-## v0.0.1 (2024-01-31)
+## v2.0.1 (2024-01-31)
 
 ### Fix
 
