@@ -2,6 +2,19 @@
 
 
 
+## v2.1.0 (2024-01-31)
+
+### Feature
+
+* feat: added logo to read-me ([`fdc3e33`](https://github.com/UBC-MDS/passwordler/commit/fdc3e33e1eba88404965d8970286ae8786edec61))
+
+### Unknown
+
+* Merge pull request #87 from UBC-MDS/logo-update
+
+feat: Feedback addressed by adding logo to read-me ([`8667040`](https://github.com/UBC-MDS/passwordler/commit/86670408e90f845b865b346708ca9ae7174432ff))
+
+
 ## v2.0.4 (2024-01-31)
 
 ### Unknown
