@@ -14,6 +14,12 @@ def password_strength(password):
 
     Returns:
     str: a rating of either 'weak', 'good' or 'strong'
+    
+    Example:
+    >>> password_strength('baseball')
+    Output: 'Your password is: Weak'
+    >>> password_strength('Baseball4life!')
+    Output: 'Your password is: Strong'
     """
     if not isinstance(password, str):
         raise TypeError("'password' should be of type 'string'")

@@ -15,6 +15,12 @@ def generate_password(length=12, include_symbols=True, include_numbers=True):
 
     Returns:
     str: A randomly generated password.
+    
+    Example:
+    >>> generate_password()
+    Output: ',tKC]m"wDJ34'
+    >>> generate_password(include_symbols=False, include_numbers=False)
+    Output: 'NJfVKhgnrJYa'
     """
 
     if not isinstance(length, int):
