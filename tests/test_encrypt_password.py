@@ -7,7 +7,7 @@ def test_encrypt_password_type_error():
     """
     Test if the function returns a TypeError if the type of the input is not correct.
     """
-    with pytest.raises(TypeError, match="string expected as encrypted message"):
+    with pytest.raises(TypeError, match="string expected as encrypted password"):
         encrypt_password(123)
 
     with pytest.raises(TypeError, match="integer expected as random_seed"):
@@ -16,9 +16,9 @@ def test_encrypt_password_type_error():
 
 def test_encrypt_password_value_error():
     """
-    Test if the function returns a ValueError if the input for the encrypted_message is an emptry string.
+    Test if the function returns a ValueError if the input for the encrypted_password is an emptry string.
     """
-    with pytest.raises(ValueError, match="encrypted_message cannot be empty string"):
+    with pytest.raises(ValueError, match="encrypted_password cannot be empty string"):
         encrypt_password('')
 
 
@@ -32,22 +32,22 @@ def test_encrypt_password_no_seed():
 
 def test_encrypt_normal():
     """
-    Test that a standard message is correctly encrypted.
-    The encrypted message should be different from the original message.
+    Test that a standard password is correctly encrypted.
+    The encrypted password should be different from the original password.
     """
-    message = "testmessage"
-    encrypted = encrypt_password(message, 123)
-    assert encrypted != message
+    password = "testmessage"
+    encrypted = encrypt_password(password, 123)
+    assert encrypted != password
     assert isinstance(encrypted, str)
 
 
 def test_encrypt_non_standard_characters():
     """
     Test that non-standard characters (not in the original character set) 
-    are unchanged in the encrypted message.
+    are unchanged in the encrypted password.
     """
-    message = "test \t\n\r\x0b\x0c"
-    encrypted = encrypt_password(message, 123)
+    password = "test \t\n\r\x0b\x0c"
+    encrypted = encrypt_password(password, 123)
     print(encrypted)
 
     assert all(char in encrypted for char in " \t\n\r\x0b\x0c")

@@ -3,33 +3,33 @@
 import random
 from ._internals import original, getKeyMap
 
-def encrypt_password(message, random_seed=123):
+def encrypt_password(password, random_seed=123):
     """
-    Encrypt a message using a simple substitution cipher.
+    Encrypt a password using a simple substitution cipher.
 
-    This function encrypts a message by substituting each character with a corresponding character 
+    This function encrypts a password by substituting each character with a corresponding character 
     from a shuffled set, using the same set of characters as the decryption function. The shuffle 
-    is controlled by a random seed to ensure reproducible results, allowing encrypted messages 
+    is controlled by a random seed to ensure reproducible results, allowing encrypted passwords 
     to be consistently decrypted using the matching seed. Characters not included in the 
-    substitution set remain unchanged in the encrypted message.
+    substitution set remain unchanged in the encrypted password.
 
     Parameters:
-    - message (str): The message to be encrypted.
+    - password (str): The password to be encrypted.
     - random_seed (int): Seed for the random number generator to ensure consistent encryption 
                          results. Default value is 123.
 
     Returns:
-    - str: The encrypted message.
+    - str: The encrypted password.
 
     Example:
-    >>> original_message = 'Monty Python'
-    >>> encrypted_message = encrypt_password(original_message, random_seed = 123)
-    >>> decrypted_message = decrypt_password(encrypted_message, random_seed = 123)
+    >>> original_password = 'Monty Python'
+    >>> encrypted_password = encrypt_password(original_password, random_seed = 123)
+    >>> decrypted_password = decrypt_password(encrypted_password, random_seed = 123)
     Output: 'Monty Python'
     """
-    if not isinstance(message, str):
+    if not isinstance(password, str):
         raise TypeError(
-            f"string expected as encrypted message, got '{type(message)}'"
+            f"string expected as encrypted password, got '{type(password)}'"
         )
 
     if not isinstance(random_seed, int):
@@ -37,9 +37,9 @@ def encrypt_password(message, random_seed=123):
             f"integer expected as random_seed, got '{type(random_seed)}'"
         )
 
-    if message == '':
+    if password == '':
         raise ValueError(
-            'encrypted_message cannot be empty string')
+            'encrypted_password cannot be empty string')
 
     random.seed(random_seed)
 
@@ -47,14 +47,14 @@ def encrypt_password(message, random_seed=123):
     random.shuffle(encryption)
 
     keyMap = getKeyMap(encryption)
-    encrypted_msg = []
+    encrypted_pass = []
 
-    for character in message:
+    for character in password:
         if character in original:
-            encrypted_msg.append(keyMap[character])
+            encrypted_pass.append(keyMap[character])
         else:
-            encrypted_msg.append(character)
+            encrypted_pass.append(character)
 
-    encrypted_msg = ''.join(encrypted_msg)
+    encrypted_pass = ''.join(encrypted_pass)
 
-    return encrypted_msg
+    return encrypted_pass
