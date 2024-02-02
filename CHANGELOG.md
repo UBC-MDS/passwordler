@@ -2,6 +2,27 @@
 
 
 
+## v2.1.2 (2024-02-02)
+
+### Fix
+
+* fix: changed message to password in example file ([`2b8e0a5`](https://github.com/UBC-MDS/passwordler/commit/2b8e0a5a259aba17127f38e64280100563ee77f5))
+
+* fix: changed message to password encrypt_decrypt test ([`153d847`](https://github.com/UBC-MDS/passwordler/commit/153d8472ca8b9236371f9fbd4eafd3569384affc))
+
+* fix: switched message to password in decrypt function and test ([`b07e792`](https://github.com/UBC-MDS/passwordler/commit/b07e792ecf115e966f1e463a87cbe72c64cf5cba))
+
+* fix: changed message to password in function and tests ([`d251769`](https://github.com/UBC-MDS/passwordler/commit/d2517690ba1f024e69805d657f73ecb306ba2995))
+
+* fix: changed message to password in readme ([`e994032`](https://github.com/UBC-MDS/passwordler/commit/e994032f2ad7a6a44267030cc970f1f291f2a2c0))
+
+### Unknown
+
+* Merge pull request #92 from UBC-MDS/message_to_password
+
+Switching the wording in encypt and decrypt functions to password ([`a8c64ad`](https://github.com/UBC-MDS/passwordler/commit/a8c64adc485ace380573c63dc2720d52e743fb29))
+
+
 ## v2.1.1 (2024-01-31)
 
 ### Fix
