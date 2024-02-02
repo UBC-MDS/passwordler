@@ -14,7 +14,7 @@ This package provides password management tools in Python. The package consists 
 - `encrypt_password`:
    - Encrypts a password using a simple substitution cipher. This function applies a character mapping based on a shuffled character set, providing basic encryption.
 - `decrypt_password`:
-   - Decrypts a message that was encrypted using the `encrypt_password` function. It reverses the encryption process by mapping each character of the encrypted message back to its original character.
+   - Decrypts a password that was encrypted using the `encrypt_password` function. It reverses the encryption process by mapping each character of the encrypted message back to its original character.
 
 This Python package is useful for users seeking an integrated solution for password management, offering a user-friendly experience. With key functionalities consolidated in one package, users can effortlessly generate strong passwords, evaluate their strength, and grasp encryption and decryption methods through our straightforward substitution cipher.
 

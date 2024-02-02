@@ -7,7 +7,7 @@ def test_decrypt_password_type_error():
     """
     Test if the function returns a TypeError if the type of the input is not correct.
     """
-    with pytest.raises(TypeError, match="string expected as encrypted message"):
+    with pytest.raises(TypeError, match="string expected as encrypted password"):
         decrypt_password(123)
 
     with pytest.raises(TypeError, match="integer expected as random_seed"):
@@ -16,9 +16,9 @@ def test_decrypt_password_type_error():
 
 def test_decrypt_password_value_error():
     """
-    Test if the function returns a ValueError if the input for the encrypted_message is an emptry string.
+    Test if the function returns a ValueError if the input for the encrypted_password is an emptry string.
     """
-    with pytest.raises(ValueError, match="encrypted_message cannot be empty string"):
+    with pytest.raises(ValueError, match="encrypted_password cannot be empty string"):
         decrypt_password("")
 
 
@@ -47,9 +47,9 @@ def test_decrypt_password_special_characters_input():
     assert isinstance(result, str)
 
 
-def test_decrypt_password_long_input_message():
+def test_decrypt_password_long_input_password():
     """
-    Test if the function handles longer messages correctly.
+    Test if the function handles longer passwords correctly.
     """
     result = decrypt_password(
         "I say you are, and I should know. I followed a few!", random_seed=42
