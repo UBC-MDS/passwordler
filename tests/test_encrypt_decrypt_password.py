@@ -8,8 +8,8 @@ def test_encryption_decryption():
     """
     Test if the encryption and decryption function match each other.
     """
-    encrypted_message = encrypt_password("Monty Python", random_seed=123)
+    encrypted_password = encrypt_password("Monty Python", random_seed=123)
 
     assert (
-        decrypt_password(encrypted_message, random_seed=123) == "Monty Python"
-    ), "The encrypted message is not the same as the initial message"
+        decrypt_password(encrypted_password, random_seed=123) == "Monty Python"
+    ), "The encrypted password is not the same as the initial message"
