@@ -16,7 +16,7 @@ def test_decrypt_password_type_error():
 
 def test_decrypt_password_value_error():
     """
-    Test if the function returns a ValueError if the input for the encrypted_password is an emptry string.
+    Test if the function returns a ValueError if the input for the argument encrypted_password is an empty string.
     """
     with pytest.raises(ValueError, match="encrypted_password cannot be empty string"):
         decrypt_password("")
