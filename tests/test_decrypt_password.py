@@ -7,7 +7,7 @@ def test_decrypt_password_type_error():
     """
     Test if the function returns a TypeError if the type of the input is not correct.
     """
-    with pytest.raises(TypeError, match="string expected for argument encrypted_password"):
+    with pytest.raises(TypeError, match="string expected for encrypted password"):
         decrypt_password(123)
 
     with pytest.raises(TypeError, match="integer expected as random_seed"):
