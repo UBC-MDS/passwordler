@@ -26,6 +26,7 @@ def password_strength(password):
     elif password == '':
         raise ValueError("'password' cannot be an empty string")
     
+    # collect information on the password
     count_uppercase = len(re.findall("[A-Z]", password))
     count_numbers = len(re.findall('[0-9]', password))
     count_special_chars = len(re.findall('[!-/:-@\\[-`{-~]', password)) 
@@ -34,10 +35,14 @@ def password_strength(password):
                         'baseball', 'dragon', 'football', '1234567', 'monkey', 'letmein', 'abc123', 
                         '111111', 'mustang', 'access', 'shadow', 'master', 'michael', 'superman', 
                         '696969', '123123', 'batman', 'trustno1']
-
+    
+    # conditions for strong password
     if length >= 12 and count_uppercase >= 1 and count_numbers >= 1 and count_special_chars >= 1 and password not in common_passwords:
         return 'Your password is: Strong'
+    
+    # conditions for good password
     elif length >= 8 and (count_uppercase + count_numbers + count_special_chars) >= 2 and password not in common_passwords:
         return 'Your password is: Good'
+    
     else:
         return 'Your password is: Weak'

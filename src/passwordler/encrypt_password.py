@@ -46,9 +46,11 @@ def encrypt_password(password, random_seed=123):
     encryption = original.copy()
     random.shuffle(encryption)
 
+    # generate a key map for encryption
     keyMap = getKeyMap(encryption)
     encrypted_pass = []
 
+    # encrypt password with key map
     for character in password:
         if character in original:
             encrypted_pass.append(keyMap[character])

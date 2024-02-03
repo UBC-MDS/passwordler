@@ -47,9 +47,11 @@ def decrypt_password(encrypted_password, random_seed = 123):
     decryption = original.copy()
     random.shuffle(decryption)
 
+    # generate a key map for decryption
     keyMap = getKeyMap(decryption, isDecryption=True)
     decrypted_pass = []
 
+    # decrypt password with key map
     for character in encrypted_password:
         if character in keyMap:
             decrypted_pass.append(keyMap[character])
