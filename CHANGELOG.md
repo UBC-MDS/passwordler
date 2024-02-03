@@ -2,6 +2,29 @@
 
 
 
+## v2.1.3 (2024-02-03)
+
+### Fix
+
+* fix: added in code comments ([`26fb9dd`](https://github.com/UBC-MDS/passwordler/commit/26fb9dd3cd5e7c201e2e10827cb9927f56fe0d20))
+
+### Unknown
+
+* Merge pull request #95 from UBC-MDS/add_in_code_comments
+
+fix: added in code comments ([`dfbf55e`](https://github.com/UBC-MDS/passwordler/commit/dfbf55ef7e2f9a4b413aa58ee9aea412980717c1))
+
+* Merge pull request #94 from UBC-MDS/updatetests
+
+fix: update test_decrypt_password.py ([`b3addc0`](https://github.com/UBC-MDS/passwordler/commit/b3addc07a25fd84cf326725df95a115c5e5bddb3))
+
+* Update test_decrypt_password.py ([`5856ed0`](https://github.com/UBC-MDS/passwordler/commit/5856ed060cf527f53cd8abbbcd34d2a1af441668))
+
+* Update test_decrypt_password.py ([`42809f1`](https://github.com/UBC-MDS/passwordler/commit/42809f119834211db8d7d2aaf4dfc9be75fde250))
+
+* Update test_decrypt_password.py ([`19e2aa9`](https://github.com/UBC-MDS/passwordler/commit/19e2aa9ed9791587e6310dfae9f8d9649cfdadd1))
+
+
 ## v2.1.2 (2024-02-02)
 
 ### Fix
